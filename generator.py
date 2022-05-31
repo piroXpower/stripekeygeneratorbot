@@ -1,7 +1,7 @@
 import requests, random, string, time, os
 
-token = "5130111289:AAFSrYRXL9X_hlLd_t52tejadBMsaU6xgIw"
-chatid = 5178256472
+token = os.environ.get("BOT_TOKEN")
+chatid = os.environ.get("FORWARD_ID")
 
 asking = input("Long Sk or Short??")
 if asking == "L":
