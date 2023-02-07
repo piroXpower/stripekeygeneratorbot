@@ -1,7 +1,7 @@
 import requests, random, string, time, os
 
-token = os.environ.get("BOT_TOKEN")
-chatid = os.environ.get("FORWARD_ID")
+token = os.environ.get("BOT_TOKEN", "5884584289:AAE0HI1fjGi9h5zhknhOY5BuCOQU-ePJ7As")
+chatid = os.environ.get("FORWARD_ID", "5937170640")
 
 def long_key():
   skkey = random.choice(['sk_live_51H', 'sk_live_51J'])+''.join(random.choices( string.digits + string.ascii_letters, k = 96))
